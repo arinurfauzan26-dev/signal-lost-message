@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> Signal Lost - Waiting For Connection</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="noise"></div>
+
+        <div class="container">
+            <div class="header">
+                <span class="status-dot"></span>
+                <span class="status-text">CONNECTION INTERRUPTED</span>
+            </div>
+        
+        
+        <div class="timer-box">
+            <div class="label">Time elapse since last signal</div>
+            <div id="timer">CALCULATING....</div>
+        </div>
+
+        <div class="message-area">
+            <p id="initial-text">Sistem tidak mendeteksi dari pengguna ini</p>
+
+            <div id="secret-message" class="hidden-content">
+                <p class="fade-in-text">Halo...</p>
+                <p class="fade-in-text">Mungkin ini agak lucu buat kita, "I still love you no matter what" tapi sekarang beda, sekarang sa sadar kalau cewe imut dan pintar ini tidak bisa di ajak pacaran, lebih baik dilamar. mungkin di waktu yang tepat setelah kita perbaiki diri masing-masing dan mengejar karir,mungkin akan lebih baik akan ke jenjang serius pada waktunya. 20 tahun lagi</p>
+                <p class="fade-in-text">Halaman ini adalah bukti cinta pertamaku adalah kita , Kalau Aku masih disini. Kalau kita butuh teman bicara, yang bisa dukung kita, chat saja sa adaji untuk kita, tapi kalau sibuk nda akan sa ganggu, atau lagi butuh ruang yang bikin nyaman.</p>
+                <br>
+                <p class="signature">-Noer</p>
+            </div>
+            <div id="memory-gallery" class="gallery-section-hidden-content"></div>
+                <h2>MEMORIES</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="WhatsApp Image 2025-08-12 at 18.13.25.jpeg" alt="Kenangan 1">
+            </div>
+            <button onclick="reconnect()" id="btn-action">PING SIGNAL</button>
+            
+            <audio id="bg-music" loop>
+                <source src="The 1975 - About You (Lyrics).mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
