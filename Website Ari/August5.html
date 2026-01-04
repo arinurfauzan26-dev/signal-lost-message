@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Status: Lost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise"></div>
+
+    <div class="container">
+        <div class="header">
+            <span class="status-dot"></span>
+            <span class="status-text">CONNECTION INTERRUPTED</span>
+        </div>
+
+        <div class="timer-box">
+            <p class="label">Time since last signal:</p>
+            <div id="timer">0h 0j 0m 0d</div>
+        </div>
+
+        <div class="message-area">
+            <p id="initial-text">System is unable to locate the user frequency.</p>
+            
+            <div id="secret-message" class="hidden-content">
+                <p class="fade-in">"Lost signal, but never a lost feeling."</p>
+                <p class="fade-in">Mungkin jarak sedang menguji, tapi sinyalku akan selalu terbuka untukmu. Kapanpun kamu siap untuk bicara lagi, aku masih di sini.</p>
+            </div>
+        </div>
+
+        <div class="action-area">
+            <div id="error-log" class="error-text"></div>
+            <button onclick="reconnect()" id="btn-action">PING SIGNAL</button>
+        </div>
+
+        <div id="memory-gallery" class="gallery-section hidden-content">
+            <h2>:: IN ANOTHER LIFE ::</h2>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="WhatsApp Image 2025-08-12 at 18.13.24 (1).jpeg" alt="Foto 1"></div>
+                <div class="photo-item"><img src="WhatsApp Image 2025-08-12 at 18.13.25 (1).jpeg" alt="Foto 2"></div>
+                <div class="photo-item full-width"><img src="WhatsApp Image 2025-08-12 at 18.13.25.jpeg" alt="Foto 3"></div>
+            </div>
+
+            <div class="signature-container">
+                <p class="waiting-msg">I Love You 3000...</p>
+                <h3 class="author-name">- NOER -</h3>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="The 1975 - About You (Lyrics).mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
